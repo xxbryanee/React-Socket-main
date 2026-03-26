@@ -56,7 +56,7 @@ class Server {
     // Desplegar el directorio público
     //// Servir archivos estáticos (HTML, CSS, JS) desde la carpeta 'public'
     //Hace pública la carpeta public para que los clientes puedan acceder a archivos como index.html, style.css, etc.
-   // this.app.use(express.static(path.resolve(__dirname, '../public')))
+   this.app.use(express.static(path.resolve(__dirname, '../public')))
     // Middleware para parsear JSON
     //Convierte automáticamente los JSON que llegan en las peticiones a objetos JavaScript
     this.app.use(express.json())
